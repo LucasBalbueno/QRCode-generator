@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+
+:root {
+    --fonte-principal: 'Roboto', sans-serif;
+    --peso-regular: 400;
+    --peso-bold: 500;
+    --cinza-fundo: #1d1d1d;
+    --branco-texto: #fff;
+    --fundo-main: cadetblue;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-family: var(--fonte-principal);
+}
+
+.background {
+    background-color: var(--fundo-main);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5em;
+}
+
+.container__form {
+    border-radius: 15px;
+    background-color: var(--cinza-fundo);
+    padding: 3.5em;
+    width: 25em;
+}
+
+.form__titulo {
+    font-weight: var(--peso-bold);
+    font-size: 36px;
+    margin-bottom: 1em;
+    color: var(--branco-texto);
+}
+
+.form__texto {
+    font-weight: var(--peso-regular);
+    font-size: 18px;
+    margin-bottom: 2em;
+    color: var(--branco-texto);
+}
+
+.form__observacoes-negrito {
+    font-weight: var(--peso-bold);
+    font-size: 18px;
+    color: var(--fundo-main);
+}
+
+.form__observacoes-texto {
+    font-weight: var(--peso-regular);
+    font-size: 18px;
+    color: var(--branco-texto);
+    margin-bottom: 3em;
+}
+
+.form__link{
+    display: block;
+    border: none;
+    border-radius: 15px;
+    padding: 1.5em;
+    width: 20em;
+    font-size: 16px;
+    font-family: var(--fonte-principal);
+    font-weight: var(--peso-regular);
+    color: var(--cinza-fundo);
+    text-align: center;
+    margin: 0 auto;
+}
+
+.container__code {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 15px;
+    background-color: var(--cinza-fundo);
+    padding: 3em;
+    width: 25em;
+    max-height: 12em;
+    transition: all 1.5s ease;
+    overflow: hidden;;
+}
+
+.generator__botao {
+    background: transparent;
+    display: block;
+    border: 5px solid var(--fundo-main);
+    border-radius: 15px;
+    padding: 1.5em;
+    width: 20em;
+    font-size: 16px;
+    font-family: var(--fonte-principal);
+    font-weight: var(--peso-bold);
+    color: var(--branco-texto);
+    text-align: center;
+    margin: 0 auto;
+}
+
+.generator__botao:hover {
+    background-color: var(--fundo-main);
+    color: var(--cinza-fundo);
+    transition: .6 ease;
+}
+
+.code__imagem {
+    display: none;
+}
+
+.generator__botao-concluded {
+    background-color: var(--fundo-main);
+    color: var(--cinza-fundo);
+}
+
+.code__imagem-activated {
+    display: block;
+    width: 15em;
+    margin-top: 2em;
+}
+
+.container__code-activated {
+    max-height: 21em;
+}
