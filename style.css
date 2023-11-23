@@ -62,7 +62,7 @@ html {
     margin-bottom: 3em;
 }
 
-.form__link{
+.form__link {
     display: block;
     border: none;
     border-radius: 15px;
@@ -86,7 +86,8 @@ html {
     width: 25em;
     max-height: 12em;
     transition: all 1.5s ease;
-    overflow: hidden;;
+    overflow: hidden;
+    ;
 }
 
 .generator__botao {
@@ -127,4 +128,36 @@ html {
 
 .container__code-activated {
     max-height: 21em;
+}
+
+
+@media screen and (max-width: 1024px) {
+    .background {
+        flex-direction: column;
+        height: 100%;
+    }
+
+    .container__form {
+        width: 15em;
+        margin-top: 2em;
+    }
+
+    .form__titulo {
+        font-size: 32px;
+    }
+
+    .form__link {
+        width: 12em;
+    }
+    
+    .container__code {
+        width: 15em;
+        /* min-height: 21em; */
+        margin-bottom: 2em;
+    }
+
+    .generator__botao {
+        width: 15em;
+    }
+
 }

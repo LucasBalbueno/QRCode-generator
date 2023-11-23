@@ -2,8 +2,9 @@ const inputLink = document.getElementById('inputLink');
 const botaoGenerator = document.getElementById('botaoGenerator');
 const codeImg = document.getElementById('codeImg');
 const containerCode = document.getElementById('containerCode');
+const downloadbtn = document.getElementById('downloadbtn');
 
-botaoGenerator.addEventListener('click', () => {                               // MUDAR TIPO DO EVENTO
+botaoGenerator.addEventListener('click', () => {
     let conteudo = inputLink.value;
 
     if (conteudo == '') {
@@ -18,6 +19,8 @@ botaoGenerator.addEventListener('click', () => {                               /
 
         codeImg.classList.add('code__imagem-activated');
         codeImg.src = qrcode;
+
+        downloadbtn.href = qrcode;
     }
 
     codeImg.addEventListener('load', () => {
