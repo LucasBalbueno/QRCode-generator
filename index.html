@@ -4,22 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>QR Code Generator</title>
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./assets/styles/style.css">
 </head>
 <body>
     <main class="background">
         <div class="container__form">
             <h1 class="form__titulo">Gerador de QR Code</h1>
-            <p class="form__texto">Cole aqui um link ou uma mensagem para seu QR Code ser gerado!</p>
-            <p class="form__observacoes-texto"><strong class="form__observacoes-negrito">OBSERVAÇÕES:</strong> É importante prestar atenção para colocar links válidos e sem espaços vazios.</p>
+            <p class="form__texto">Cole aqui um link ou uma mensagem para o seu QR Code ser gerado!</p>
+            <p class="form__observacoes-texto"><strong class="form__observacoes-negrito">DOWNLOAD:</strong> Após o QR Code ser gerado, basta pressionar a imagem ou clique em cima dela com o botão direito do mouse para realizar o download</p>
             <input id="inputLink" class="form__link" name="link" type="text" placeholder="Cole aqui o seu link...">
         </div>
         <div class="container__code" id="containerCode">
             <button id="botaoGenerator" class="generator__botao" type="submit">Gerar QR Code</button>
             <img class="code__imagem" id="codeImg" src="" alt="Imagem do Qr Code">
-            <a download="" href="" id="downloadbtn">teste</a>
         </div>
     </main>
-    <script type="text/javascript" src="./script.js"></script>
+    <script type="text/javascript" src="./assets/js/script.js"></script>
 </body>
 </html>

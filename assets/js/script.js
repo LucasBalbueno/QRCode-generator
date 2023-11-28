@@ -2,7 +2,6 @@ const inputLink = document.getElementById('inputLink');
 const botaoGenerator = document.getElementById('botaoGenerator');
 const codeImg = document.getElementById('codeImg');
 const containerCode = document.getElementById('containerCode');
-const downloadbtn = document.getElementById('downloadbtn');
 
 botaoGenerator.addEventListener('click', () => {
     let conteudo = inputLink.value;
@@ -13,14 +12,12 @@ botaoGenerator.addEventListener('click', () => {
         botaoGenerator.innerText = 'Gerando QR Code! Aguarde...';
 
         let qrcode = `https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=${conteudo.trim()}`;
-
+    
         console.log(qrcode)
         containerCode.classList.add('container__code-activated');
 
         codeImg.classList.add('code__imagem-activated');
         codeImg.src = qrcode;
-
-        downloadbtn.href = qrcode;
     }
 
     codeImg.addEventListener('load', () => {

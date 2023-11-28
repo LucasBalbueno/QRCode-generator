@@ -25,27 +25,27 @@ html {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 5em;
+    gap: 5rem;
 }
 
 .container__form {
     border-radius: 15px;
     background-color: var(--cinza-fundo);
-    padding: 3.5em;
-    width: 25em;
+    padding: 3.5rem;
+    width: 25rem;
 }
 
 .form__titulo {
     font-weight: var(--peso-bold);
     font-size: 36px;
-    margin-bottom: 1em;
+    margin-bottom: 1rem;
     color: var(--branco-texto);
 }
 
 .form__texto {
     font-weight: var(--peso-regular);
     font-size: 18px;
-    margin-bottom: 2em;
+    margin-bottom: 2rem;
     color: var(--branco-texto);
 }
 
@@ -59,15 +59,15 @@ html {
     font-weight: var(--peso-regular);
     font-size: 18px;
     color: var(--branco-texto);
-    margin-bottom: 3em;
+    margin-bottom: 3rem;
 }
 
 .form__link {
     display: block;
     border: none;
     border-radius: 15px;
-    padding: 1.5em;
-    width: 20em;
+    padding: 1.5rem;
+    width: 20rem;
     font-size: 16px;
     font-family: var(--fonte-principal);
     font-weight: var(--peso-regular);
@@ -82,12 +82,11 @@ html {
     align-items: center;
     border-radius: 15px;
     background-color: var(--cinza-fundo);
-    padding: 3em;
-    width: 25em;
-    max-height: 12em;
+    padding: 3.5rem;
+    width: 25rem;
+    max-height: 12rem;
     transition: all 1.5s ease;
     overflow: hidden;
-    ;
 }
 
 .generator__botao {
@@ -95,8 +94,8 @@ html {
     display: block;
     border: 5px solid var(--fundo-main);
     border-radius: 15px;
-    padding: 1.5em;
-    width: 20em;
+    padding: 1.5rem;
+    width: 20rem;
     font-size: 16px;
     font-family: var(--fonte-principal);
     font-weight: var(--peso-bold);
@@ -122,24 +121,26 @@ html {
 
 .code__imagem-activated {
     display: block;
-    width: 15em;
-    margin-top: 2em;
+    width: 15rem;
+    margin-top: 2rem;
 }
 
 .container__code-activated {
-    max-height: 21em;
+    max-height: 21rem;
 }
 
+/* LAYOUT RESPONSIVO (TELAS MOBILES, MINI MOBILE, TABLETS, NOTEBOOK, DESKTOP E ULTRAWIDE -> */
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1200px) {
     .background {
         flex-direction: column;
         height: 100%;
+        gap: 3rem;
     }
 
     .container__form {
-        width: 15em;
-        margin-top: 2em;
+        width: 15rem;
+        margin-top: 2rem;
     }
 
     .form__titulo {
@@ -147,17 +148,115 @@ html {
     }
 
     .form__link {
-        width: 12em;
+        width: 12rem;
     }
     
     .container__code {
-        width: 15em;
-        /* min-height: 21em; */
-        margin-bottom: 2em;
+        width: 15rem;
+        margin-bottom: 2rem;
     }
 
     .generator__botao {
-        width: 15em;
+        width: 15rem;
+    }
+}
+
+@media screen and (max-width: 330px) {
+    .background {
+        gap: 1rem;
     }
 
+    .container__form {
+        width: 13.5rem;
+        padding: 2rem;
+        margin-top: 1rem;
+    }
+
+    .form__titulo {
+        font-size: 22px;
+    }
+
+    .form__observacoes-texto, .form__observacoes-negrito, .form__texto {
+        font-size: 15px;
+        margin-bottom: 1rem;
+    }
+
+    .form__link {
+        width: 8rem;
+    }
+
+    .form__link::placeholder {
+        font-size: 13px;
+    }
+    
+    .container__code {
+        width: 13.5rem;
+        padding: 2rem;
+        margin-bottom: 1rem;
+    }
+
+    .generator__botao {
+        width: 12rem;
+    }
+}
+
+@media screen and (min-height: 855px) and (max-width:1200px) {
+    .container__code {
+        margin-bottom: 6rem;
+    }
+}
+
+@media screen and (min-height: 1000px) and (max-width:1200px) {
+    .container__code {
+        margin-bottom: 12rem;
+    }
+}
+
+@media screen and (min-height: 1100px) and (max-width:1200px) {
+    .container__code {
+        margin-bottom: 22rem;
+    }
+}
+
+@media screen and (min-width:2500px) {
+    .container__form {
+        width: 32rem;
+        padding: 3rem;
+    }
+
+    .form__titulo {
+        font-size: 44px;
+    }
+
+    .form__observacoes-texto, .form__observacoes-negrito, .form__texto {
+        font-size: 25px;
+        margin-bottom: 3rem;
+    }
+
+    .form__link {
+        width: 25rem;
+        font-size: 20px;
+    }
+
+    .form__link::placeholder {
+        font-size: 20px;
+    }
+    
+    .container__code {
+        width: 32rem;
+        padding: 3rem;
+    }
+
+    .container__code-activated {
+        max-height: 26rem;
+    }
+
+    .code__imagem {
+        width: 300px;
+    }
+
+    .generator__botao {
+        width: 25rem;
+        font-size: 20px;
+    }
 }
